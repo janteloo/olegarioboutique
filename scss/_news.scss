@@ -1,0 +1,58 @@
+.img-container {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: none;
+    height:320px;
+    margin: 0 auto 30px;
+
+    p {
+        font-size: 1.2rem;
+        margin-top:20px;
+        margin-left:20px;
+        color: #fff;
+    }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $theme-primary;
+
+  
+    &:hover {
+        opacity: 0.5;
+    }
+
+     &:focus {
+      outline: none;
+    }
+}
+
+
+.loading {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid $theme-primary;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

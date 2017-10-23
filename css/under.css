@@ -1,0 +1,4 @@
+body .content{
+    background: url("../img/header-bg.jpg") no-repeat;
+    background-size: cover;
+}
